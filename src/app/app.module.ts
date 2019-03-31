@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import {ButtonModule} from 'primeng/button';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { EduAutoCompleteModule } from './components/autocomplete/autocomplete.module';
+import { EduButtonModule } from './components/button/button.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,ButtonModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  imports:      [ BrowserModule, EduAutoCompleteModule, EduButtonModule ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
