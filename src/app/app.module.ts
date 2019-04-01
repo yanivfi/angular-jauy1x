@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { EduAutoCompleteModule } from './components/autocomplete/autocomplete.module';
-import { EduButtonModule } from './components/button/button.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, EduAutoCompleteModule, EduButtonModule ],
+  imports:      [ BrowserModule, AppRoutingModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
