@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { EduAutocompleteComponent } from './autocomplete.component'
+import { EduAutocompleteComponent } from './autocomplete.component';
+import { EduAutoCompleteRoutingModule } from './autocomplete-routing.module';
 
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-    imports: [ FormsModule, AutoCompleteModule, BrowserAnimationsModule ],
-    exports: [ EduAutocompleteComponent ],
-    declarations: [ EduAutocompleteComponent ],
-    entryComponents: [ EduAutocompleteComponent ]
-})
+    imports: [ FormsModule, AutoCompleteModule, EduAutoCompleteRoutingModule ],
+    declarations: [ EduAutocompleteComponent ]
+    })
 export class EduAutoCompleteModule { }
